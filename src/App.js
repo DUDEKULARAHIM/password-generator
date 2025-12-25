@@ -695,7 +695,7 @@
 
 import React, { useState } from "react";
 import PasswordGenerator from "./components/PasswordGenerator";
-import IntroVerification from ".components/IntroVerification";
+import IntroVerification from "./components/IntroVerification";
 import CredentialForm from "./components/CredentialForm";
 import CredentialTable from "./components/CredentialTable";
 import Footer from "./components/Footer";
