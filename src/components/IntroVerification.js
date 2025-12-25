@@ -66,7 +66,9 @@ const IntroVerification = ({ onSuccess }) => {
               <input
                 key={index}
                 ref={(el) => (inputRefs.current[index] = el)}
-                type="text"
+                type="tel"                  
+                inputMode="numeric"        
+                pattern="[0-9]*"           
                 maxLength="1"
                 value={val}
                 onChange={(e) => handleChange(e.target.value, index)}
