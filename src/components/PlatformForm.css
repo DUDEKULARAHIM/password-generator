@@ -1,0 +1,45 @@
+.platform-card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 14px;
+  width: 300px;
+  color: white;
+}
+
+.platform-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* input + label below */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-label {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

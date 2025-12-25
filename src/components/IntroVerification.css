@@ -1,0 +1,207 @@
+.intro-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.otp-box {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+/* 🔐 OTP INPUT BOXES */
+.otp-box input {
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  background: #ffffff;
+  transition: all 0.25s ease;
+  color: #333;
+}
+
+/* 🔥 ACTIVE / FOCUSED BOX */
+.otp-box input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(6, 96, 9, 0.8);
+  transform: scale(1.08);
+}
+
+/* ✅ FILLED BOX */
+.otp-box input:not(:placeholder-shown) {
+  border-color: darkgreen;
+}
+
+.verify-btn {
+  background: #4caf50;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.verify-btn:hover {
+  background: #388e3c;
+}
+
+.error {
+  color: #ffb3b3;
+  margin-top: 10px;
+}
+
+.hint-card {
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  /* width: 320px; */
+  margin-top: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hint-card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.option {
+  background: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background: #dbeafe;
+}
+
+.correct:hover {
+  background: #bbf7d0;
+}
+
+.code-reveal {
+  margin-top: 15px;
+  padding: 10px;
+  background: #e0f2fe;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.note {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #e0e7ff;
+  text-align: center;
+}
+
+.success {
+  color: #a7f3d0;
+}
+
+
+
+
+/* 📱 SMALL DEVICES (Tablets & Mobiles) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .otp-box {
+    gap: 10px;
+  }
+
+  .otp-box input {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .verify-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  .hint-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 18px;
+  }
+
+  .note {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+/* 📱 EXTRA SMALL DEVICES (Phones) */
+@media (max-width: 480px) {
+  .intro-container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .otp-box {
+    gap: 1px;
+  }
+
+  .otp-box input {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+
+  /* Reduce scale on focus for small screens */
+  .otp-box input:focus {
+    transform: scale(1.03);
+    box-shadow: 0 0 6px rgba(6, 96, 9, 0.7);
+  }
+
+  .verify-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .note {
+    font-size: 15px;
+  }
+}
